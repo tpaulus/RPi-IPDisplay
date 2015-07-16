@@ -23,7 +23,7 @@ def get_ip_address(ifname):
 
 while ip is None and interface <= 10:
     try:
-        ip = get_ip_address('eth0' + str(interface))
+        ip = get_ip_address('eth' + str(interface))
     except IOError:
         pass
 
